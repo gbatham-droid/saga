@@ -28,9 +28,9 @@ public class EmployeeProcessingService {
         System.out.println("Service-B: Processing employee...");
 
         // simulate failure
-        if (true) {
-            throw new ArithmeticException("Service-B exception");
-        }
+//        if (true) {
+//            throw new ArithmeticException("Service-B exception");
+//        }
 
         Employee emp = new Employee(event.getId(), event.getName(), "B_PROCESSED");
         repo.save(emp);
